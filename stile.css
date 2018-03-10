@@ -19,8 +19,15 @@ body {
 	align-items: flex-end;
 }
 
+h1 {
+	font-size: 28px;
+}
+
+h2 {
+	font-size: 25px;
+}
+
 h3 {
-	color: #364a43;
 	font-size: 16px;
 }
 
@@ -38,12 +45,7 @@ h3 {
 }
 
 .row:nth-child(even) {
-	background-color: #4d9979;
-	color: white;
-}
-
-.row:nth-child(even) a {
-	color: #e1eae7;
+	background-color: rgba(170, 213, 194, .5);
 }
 
 .title,
@@ -68,9 +70,30 @@ h3 {
 	flex: 1 0 calc(65% - 30px);
 }
 
+.print-only {
+	display: none;
+}
+
 @media only screen and (max-width: 600px) {
+	body {
+		margin: 0;
+	}
+
 	.title,
 	.description {
 		flex: 1 1 100%;
+		text-align: left;
+	}
+
+	h1,
+	h2,
+	h3 {
+		padding: 15px;
+	}
+}
+
+@media print {
+	.print-only {
+		display: block;
 	}
 }
