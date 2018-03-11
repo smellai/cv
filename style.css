@@ -8,15 +8,40 @@ body {
   text-align: left;
   letter-spacing: 1px;
   line-height: 20px;
-  margin: 50px;
+  margin: 25px auto;
+  max-width: 1200px;
+}
+
+@media only screen and (max-width: 1230px) {
+	body {
+		margin: 25px 50px;	
+	}
 }
 
 .heading,
 .note {
 	color: #364a43;
 	display: flex;
-	flex-direction: column;
+}
+
+.note {
 	align-items: flex-end;
+}
+
+.heading {
+	align-items: center;
+	justify-content: space-between;
+}
+
+.lang,
+.pdf {
+	text-align: right;
+}
+
+.lang a,
+.pdf a {
+	color: #56766b;
+	font-size: 15px;
 }
 
 h1 {
@@ -66,6 +91,10 @@ h3 {
 	font-weight: bold;
 }
 
+.title img {
+	height: 20px;
+}
+
 .description {
 	flex: 1 0 calc(65% - 30px);
 }
@@ -76,6 +105,11 @@ h3 {
 
 .note {
 	margin-bottom: 25px;
+}
+
+.date {
+	padding-top: 20px;
+	text-align: right;
 }
 
 @media only screen and (max-width: 600px) {
@@ -92,7 +126,10 @@ h3 {
 	h1,
 	h2,
 	h3,
-	.note {
+	.note,
+	.date,
+	.lang,
+	.pdf {
 		padding: 15px;
 	}
 
@@ -108,6 +145,14 @@ h3 {
 
 @media print {
 	.print-only {
-		display: block;
+		display: flex;
+	}
+
+	.screen-only {
+		display: none;
+	}
+
+	section {
+		page-break-inside: avoid;
 	}
 }
