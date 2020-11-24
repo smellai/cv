@@ -1,7 +1,7 @@
 body {
   font-family: verdana, sans-serif;
   font-size: 12px;
-  color: #202c28;
+  color: #0d0d0d;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -70,7 +70,7 @@ h3 {
 }
 
 .row:nth-child(even) {
-	background-color: rgba(170, 213, 194, .5);
+	background-color: #b3e6b3;
 }
 
 .title,
