@@ -155,4 +155,13 @@ h3 {
 	section {
 		page-break-inside: avoid;
 	}
+
+	.date {
+		padding-top: 10px;
+	}
+
+	.note {
+		margin-bottom: 0;
+		margin-top: 10px;
+	}
 }
