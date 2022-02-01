@@ -13,155 +13,160 @@ body {
 }
 
 @media only screen and (max-width: 1230px) {
-	body {
-		margin: 25px 50px;	
-	}
+  body {
+    margin: 25px 50px;
+  }
 }
 
 .heading,
 .note {
-	color: #364a43;
-	display: flex;
+  color: #364a43;
+  display: flex;
 }
 
 .note {
-	align-items: flex-end;
+  align-items: flex-end;
 }
 
 .heading {
-	align-items: center;
-	justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .lang,
 .pdf {
-	text-align: right;
+  text-align: right;
 }
 
 .lang a,
 .pdf a {
-	color: #56766b;
-	font-size: 15px;
+  color: #56766b;
+  font-size: 15px;
 }
 
 h1 {
-	font-size: 28px;
+  font-size: 28px;
 }
 
 h2 {
-	font-size: 25px;
+  font-size: 25px;
 }
 
 h3 {
-	font-size: 16px;
+  font-size: 16px;
 }
 
 .inner {
-	margin-top: 50px;
+  margin-top: 50px;
 }
 
 .row {
-	display: flex;
-	flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .row a {
-	color: #364a43;
+  color: #364a43;
 }
 
 .row:nth-child(even) {
-	background-color: #b3e6b3;
+  background-color: #b3e6b3;
 }
 
 .title,
 .description {
-	padding: 15px;
+  padding: 15px;
 }
 
 .title div,
 .description div {
-	margin-top: 5px;
+  margin-top: 5px;
 }
 
 .title {
-	flex: 1 0 calc(35% - 30px);
-	text-align: right;
-	text-transform: uppercase;
-	font-size: 10px;
-	font-weight: bold;
+  flex: 1 0 calc(35% - 30px);
+  text-align: right;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: bold;
 }
 
 .title img {
-	height: 20px;
+  height: 20px;
 }
 
 .description {
-	flex: 1 0 calc(65% - 30px);
+  flex: 1 0 calc(65% - 30px);
 }
 
 .print-only {
-	display: none;
+  display: none;
 }
 
 .note {
-	margin-bottom: 25px;
+  margin-bottom: 25px;
 }
 
 .date {
-	padding-top: 20px;
-	text-align: right;
+  padding-top: 20px;
+  text-align: right;
 }
 
 @media only screen and (max-width: 600px) {
-	body {
-		margin: 0;
-	}
+  body {
+    margin: 0;
+  }
 
-	.title,
-	.description {
-		flex: 1 1 100%;
-		text-align: left;
-	}
+  .title,
+  .description {
+    flex: 1 1 100%;
+    text-align: left;
+  }
 
-	h1,
-	h2,
-	h3,
-	.note,
-	.date,
-	.lang,
-	.pdf {
-		padding: 15px;
-	}
+  h1,
+  h2,
+  h3,
+  .note,
+  .date,
+  .lang,
+  .pdf {
+    padding: 15px;
+  }
 
-	h1 {
-		margin: 15px 0 0;
-	}
+  h1 {
+    margin: 15px 0 0;
+  }
 
-	h2,
-	h3 {
-		margin: 0;
-	}
+  h2,
+  h3 {
+    margin: 0;
+  }
 }
 
 @media print {
-	.print-only {
-		display: flex;
-	}
+  .print-only {
+    display: flex;
+  }
 
-	.screen-only {
-		display: none;
-	}
+  .screen-only {
+    display: none;
+  }
 
-	section {
-		page-break-inside: avoid;
-	}
+  section {
+    page-break-inside: avoid;
+  }
 
-	.date {
-		padding-top: 10px;
-	}
+  .date {
+    padding-top: 10px;
+  }
 
-	.note {
-		margin-bottom: 0;
-		margin-top: 10px;
-	}
+  .note {
+    margin-bottom: 0;
+    margin-top: 10px;
+  }
+
+  .main-title {
+    width: 100%;
+    text-align: right;
+  }
 }
