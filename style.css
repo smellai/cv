@@ -48,11 +48,12 @@ h1 {
   font-size: 28px;
 }
 
-h2 {
+.subtitle {
   font-size: 25px;
+  margin-top: 5px;
 }
 
-h3 {
+h2 {
   font-size: 16px;
 }
 
@@ -99,6 +100,10 @@ h3 {
   flex: 1 0 calc(65% - 30px);
 }
 
+p:nth-child(1) {
+  margin-top: 5px;
+}
+
 .print-only {
   display: none;
 }
@@ -125,7 +130,6 @@ h3 {
 
   h1,
   h2,
-  h3,
   .note,
   .date,
   .lang,
@@ -150,10 +154,6 @@ h3 {
 
   .screen-only {
     display: none;
-  }
-
-  section {
-    page-break-inside: avoid;
   }
 
   .date {
