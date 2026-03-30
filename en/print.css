@@ -1,0 +1,117 @@
+/* Print stylesheet */
+:root {
+  --paper: #fff;
+  --sage: #4a6b5e;
+  --sage-m: #b8d4c8;
+  --badge-fg: #354f44;
+}
+* {
+  line-height: 1.4;
+  overflow: visible !important;
+}
+body {
+  background: #fff;
+  font-size: 8pt;
+  color: #1a1a18;
+  font-family: Verdana, Arial, sans-serif;
+}
+.page {
+  max-width: 100%;
+  padding: 0 1cm;
+}
+main {
+  gap: 0.8rem;
+}
+.print-bar,
+.hero-links,
+.hero::before,
+.screen-only {
+  display: none !important;
+}
+.print-only {
+  display: inline-block;
+}
+.hero {
+  padding: 0 0cm;
+  border-bottom: 1.5pt solid #000;
+  margin-bottom: 0.4cm;
+  margin-top: 0.6cm;
+}
+.hero-name {
+  font-size: 20pt;
+}
+.hero-role {
+  font-size: 8pt;
+  margin-top: 0.2rem;
+}
+.section {
+  margin-bottom: 0;
+}
+.section-title {
+  font-size: 12pt;
+}
+.area-items {
+  font-size: 8pt;
+}
+.area {padding: 0.5rem 0.5rem;}
+.exp,
+.evlist li {
+  padding: 0.3rem 0;
+  border-bottom: 1px solid #ddd;
+}
+.evlist li {
+  grid-template-columns: 100px 1fr;
+}
+.evlist li > div {
+    margin-bottom: 0;
+}
+.exp:last-child,
+.evlist li:last-child {
+  border-bottom: none;
+}
+.exp-meta,
+.ev-year {
+  display: block;
+  text-align: left;
+  color: #5a5a52;
+  font-size: 8pt;
+  margin-bottom: 0.25rem;
+}
+.exp-role {
+  font-size: 9pt;
+}
+.exp-desc {
+  font-size: 8.5pt;
+}
+.ev-role {
+  background: none;
+  color: var(--badge-fg);
+  border: 1pt solid var(--sage-m);
+  padding: 0.01rem 0.5rem;
+}
+.sec-ev,
+.sec-writing {
+  font-size: 7pt;
+}
+a {
+  color: #1a1a18;
+  border-bottom: none;
+}
+.cv-footer {
+  font-size: 6pt;
+  color: #5a5a52;
+  margin-top: 2cm;
+}
+.section > .cards-grid {
+  padding: 0;
+  border: none;
+  gap: 0.5rem;
+}
+.exp-desc:last-child {
+  margin-bottom: 0;
+}
+
+@page {
+  size: A4;
+  margin: 1.5cm;
+}

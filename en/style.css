@@ -1,0 +1,240 @@
+/* Minimal, used-only stylesheet for the CV pages.
+   Kept selectors are those referenced by current HTML files (root, en/, it/).
+   Purpose: reduce noise and ensure predictable alignment of hero, cards and experience lists.
+*/
+
+:root {
+  --ink: #0b1220;
+  --muted: #334155;
+  --ink-m: #253046;
+  --accent: #0066cc;
+  --accent-2: #0d9488;
+  --accent-m: rgba(0, 102, 204, 0.12);
+  --paper: #f8fafb;
+  --border: #e6e9ee;
+  --card-bg: #ffffff;
+  --radius: 10px;
+  --content-max-width: 760px;
+}
+
+*,
+:before,
+:after {
+  box-sizing: border-box;
+}
+html {
+  font-size: 17px;
+}
+body {
+  margin: 0;
+  min-height: 100%;
+  background: linear-gradient(180deg, #fbfdfe 0%, var(--paper) 100%);
+  color: var(--ink);
+  font-family: Verdana, system-ui, -apple-system, Segoe UI, Arial;
+  line-height: 1.6;
+}
+
+a {
+  color: var(--accent);
+}
+a:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.75rem 4rem;
+}
+
+/* Layout */
+main {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 2rem;
+}
+.areas {
+  grid-column: 2;
+  position: sticky;
+  top: 1.5rem;
+}
+section,
+.section {
+  grid-column: 1 / -1;
+  margin-bottom: 1.6rem;
+  width: 100%;
+}
+
+/* Hero */
+.hero {
+  padding: 4.2rem 0 3rem;
+  margin-bottom: 1.2rem;
+  position: relative;
+}
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 2rem;
+  align-items: center;
+  text-wrap: balance;
+}
+.hero-name {
+  font-family: Verdana, system-ui, -apple-system, Segoe UI, Arial;
+  font-weight: 700;
+  font-size: clamp(2.2rem, 5.2vw, 3.6rem);
+  line-height: 1;
+  margin: 0;
+}
+.hero-role {
+  font-family: Verdana, system-ui, -apple-system, Segoe UI, Arial;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-top: 0.45rem;
+}
+.hero-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.6rem;
+}
+.hero-links a {
+  display: inline-flex;
+  gap: 0.5rem;
+  align-items: center;
+  color: var(--ink);
+}
+
+/* Section headings use a clean sans for better readibility */
+.section-title {
+  font-size: 1.25rem;
+  color: var(--ink);
+  margin: 0;
+}
+
+/* Card grid */
+.section > .card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem;
+}
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  width: 100%;
+  margin-left: 0;
+  margin-right: auto;
+}
+.area {
+  background: var(--card-bg);
+  padding: 0.9rem 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+.area-label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--muted);
+  text-transform: uppercase;
+  margin-bottom: 0.45rem;
+}
+.area-items {
+  font-size: 0.9rem;
+  color: var(--ink-m);
+}
+
+/* Experiences */
+.exp {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 0 1.5rem;
+  padding: 0.9rem 0;
+}
+.exp-meta {
+  text-align: right;
+  color: var(--muted);
+  font-size: 0.72rem;
+}
+.exp-role {
+  display: block;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 0.35rem;
+}
+.exp-desc {
+  color: var(--ink-m);
+  font-size: 0.92rem;
+}
+
+/* Events */
+.evlist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.evlist li {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 0 1rem;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--border);
+  align-items: center;
+}
+.ev-year {
+  text-align: right;
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+.ev-role {
+  display: inline-block;
+  font-weight: 700;
+  color: var(--accent);
+  background: var(--accent-m);
+  padding: 0.12rem 0.5rem;
+  border-radius: 6px;
+  margin-left: 0.35rem;
+}
+
+.cv-footer {
+  text-align: right;
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-top: 2.6rem;
+}
+
+.print-only {
+  display: none;
+}
+
+/* Responsiveness */
+@media (max-width: 900px) {
+  .page {
+    padding: 0 1rem 3rem;
+  }
+  main {
+    display: block;
+  }
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+  .hero-links {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .areas {
+    position: static;
+  }
+  .exp,
+  .evlist li {
+    grid-template-columns: 1fr;
+  }
+  .exp-meta,
+  .ev-year {
+    text-align: left;
+  }
+}
