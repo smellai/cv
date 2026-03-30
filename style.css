@@ -161,7 +161,7 @@ body {
   padding: 0.7rem 0;
 }
 
-.writing-link {
+.writing-link, .a11y-webring-club a {
   color: var(--text-primary);
   text-decoration: underline;
   text-underline-offset: 3px;
@@ -169,7 +169,7 @@ body {
   font-weight: 500;
 }
 
-.writing-link:hover {
+.writing-link:hover, .a11y-webring-club a:hover {
   color: var(--accent);
 }
 
@@ -181,6 +181,37 @@ body {
   padding: 0.25rem 0.5rem;
   background: var(--border-card);
   border-radius: 6px;
+}
+
+/* -- A11y Webring Club -- */
+.a11y-webring-club {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-card);
+  font-size: 0.85rem;
+  color: var(--text-primary);
+}
+
+.a11y-webring-club h2 {
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-primary);
+  margin: 0 0 0.5rem;
+}
+
+.a11y-webring-club p {
+  margin: 0 0 0.5rem;
+}
+
+.a11y-webring-club ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
 }
 
 /* ── Footer ── */
