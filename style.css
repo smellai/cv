@@ -194,8 +194,8 @@ a:focus-visible {
   border-radius: 6px;
 }
 
-/* -- A11y Webring Club -- */
-.a11y-webring-club {
+/* -- Webring Club Navs -- */
+.webring-club {
   margin-top: 2rem;
   padding-top: 1.5rem;
   border-top: 1px solid var(--border-card);
@@ -203,7 +203,7 @@ a:focus-visible {
   color: var(--text-primary);
 }
 
-.a11y-webring-club h2 {
+.webring-club h2 {
   font-size: 0.72rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -212,11 +212,11 @@ a:focus-visible {
   margin: 0 0 0.5rem;
 }
 
-.a11y-webring-club p {
+.webring-club p {
   margin: 0 0 0.5rem;
 }
 
-.a11y-webring-club ul {
+.webring-club ul {
   list-style: none;
   padding: 0;
   margin: 0;
