@@ -169,7 +169,7 @@ a:focus-visible {
 }
 
 .writing-link,
-.a11y-webring-club a {
+.webring-club a {
   color: var(--text-primary);
   text-decoration: underline;
   text-underline-offset: 3px;
@@ -178,7 +178,7 @@ a:focus-visible {
 }
 
 .writing-link:hover,
-.a11y-webring-club a:hover {
+.webring-club a:hover {
   color: var(--accent);
 }
 
