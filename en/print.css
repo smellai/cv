@@ -20,12 +20,19 @@ body {
   padding: 0 1cm;
 }
 main {
-  gap: 0.8rem;
+  display: block;
+}
+ul {
+  margin-bottom: 0;
+  margin-top: 0.3rem;
+  margin-left: -1rem;
+}
+.section {
+  margin-bottom: 0.8rem;
 }
 .print-bar,
 .hero-links,
-.hero::before,
-.screen-only {
+.hero::before {
   display: none !important;
 }
 .print-only {
@@ -37,6 +44,9 @@ main {
   margin-bottom: 0.4cm;
   margin-top: 0.6cm;
 }
+.hero-grid {
+  display: block;
+}
 .hero-name {
   font-size: 20pt;
 }
@@ -44,41 +54,34 @@ main {
   font-size: 8pt;
   margin-top: 0.2rem;
 }
-.section {
-  margin-bottom: 0;
-}
 .section-title {
   font-size: 12pt;
 }
 .area-items {
   font-size: 8pt;
 }
-.area {padding: 0.5rem 0.5rem;}
+.area {padding: 0 0;border:none;}
 .exp,
 .evlist li {
   padding: 0.3rem 0;
   border-bottom: 1px solid #ddd;
 }
-.evlist li {
-  grid-template-columns: 100px 1fr;
-}
-.evlist li > div {
-    margin-bottom: 0;
-}
+
 .exp:last-child,
 .evlist li:last-child {
   border-bottom: none;
 }
 .exp-meta,
 .ev-year {
-  display: block;
   text-align: left;
   color: #5a5a52;
   font-size: 8pt;
   margin-bottom: 0.25rem;
 }
-.exp-role {
+.exp-role,
+.ev-role {
   font-size: 9pt;
+  margin-bottom: 0;
 }
 .exp-desc {
   font-size: 8.5pt;
@@ -100,7 +103,7 @@ a {
 .cv-footer {
   font-size: 6pt;
   color: #5a5a52;
-  margin-top: 2cm;
+  margin-top: 2rem;
 }
 .section > .cards-grid {
   padding: 0;
