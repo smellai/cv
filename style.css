@@ -25,7 +25,6 @@ body {
     "Segoe UI",
     sans-serif;
   line-height: 1.65;
-  font-size: 1.05rem;
 }
 
 .page {
@@ -261,6 +260,12 @@ a:focus-visible {
 
   .cards-grid {
     grid-template-columns: 1fr;
+  }
+
+  .writing-item {
+    flex-direction: column;
+      font-size: 0.875rem;
+
   }
 
   .footer {
