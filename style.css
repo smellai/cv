@@ -174,12 +174,22 @@ a:focus-visible {
   color: var(--text-primary);
   text-decoration: underline;
   text-underline-offset: 3px;
-  font-size: 1.05rem;
   font-weight: 500;
 }
 
-.writing-link:hover,
-.webring-club a:hover {
+.writing-link,
+.webring-club a {
+  font-size: 1.05rem;
+}
+
+.repo-link {
+  color: var(--text-primary);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.82rem;
+}
+
+.repo-link:hover {
   color: var(--accent);
 }
 
